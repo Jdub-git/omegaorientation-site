@@ -3,176 +3,63 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Orientation & Training</title>
-  <meta name="description" content="Omega Hospital Orientation & Training Portal" />
+  <title>OMEGA HOSPITAL — Orientation & Training</title>
   <style>
-    :root { --bg:#0b0d10; --card:#12161b; --text:#e8edf2; --muted:#9aa7b2; --accent:#4da3ff; }
-    *{box-sizing:border-box}
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
-    header{position:sticky;top:0;background:rgba(11,13,16,.85);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid #1e242b;z-index:10}
-    .wrap{max-width:1100px;margin:0 auto;padding:18px}
-    h1{font-size: clamp(1.4rem, 2.2vw, 2rem); margin:0}
-    nav{display:flex;gap:14px;flex-wrap:wrap;margin-top:10px}
-    nav a{color:var(--text);text-decoration:none;padding:8px 12px;border:1px solid #27303a;border-radius:999px;background:#0f1318}
-    nav a:hover{border-color:var(--accent)}
-    main{max-width:1100px;margin:28px auto;padding:0 18px 40px}
-    .section{margin:28px 0}
-    .section h2{font-size: clamp(1.2rem, 2vw, 1.6rem); margin:0 0 12px}
-    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px}
-    .card{background:var(--card);border:1px solid #1e242b;border-radius:16px;overflow:hidden}
-    .frame{position:relative;width:100%;aspect-ratio:16/9;background:#0f1318}
-    .frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-    .card .meta{padding:12px 14px;color:var(--muted);font-size:.95rem;border-top:1px solid #1e242b}
-    .muted{color:var(--muted)}
-    footer{border-top:1px solid #1e242b;color:var(--muted);padding:24px 18px;text-align:center}
-    .form-wrap{background:var(--card);border:1px solid #1e242b;border-radius:16px;padding:12px}
-    .form-frame{width:100%;height:760px;border:0}
-    @media (max-width:480px){ .grid{grid-template-columns:1fr} .form-frame{height:900px}}
+    body {margin:0;font-family:Arial, sans-serif;background:#f7f9fb;color:#222;}
+    header {background:#003366;color:#fff;padding:20px;text-align:center;}
+    header h1 {margin:0;font-size:2rem;letter-spacing:1px;}
+    main {max-width:1000px;margin:20px auto;padding:0 16px;}
+    section {margin:32px 0;}
+    h2 {margin-top:0;color:#003366;}
+    .video {margin-bottom:24px;}
+    iframe {width:100%;height:400px;border:0;}
+    ul {line-height:1.8;}
+    footer {margin-top:40px;padding:20px;text-align:center;color:#777;border-top:1px solid #ddd;}
   </style>
 </head>
 <body>
   <header>
-    <div class="wrap">
-      <h1>Orientation & Training</h1>
-      <nav aria-label="Sections">
-        <a href="#videos">Videos</a>
-        <a href="#form">Acknowledge / Quiz</a>
-      </nav>
-    </div>
+    <h1>OMEGA HOSPITAL</h1>
+    <div>Orientation & Training</div>
   </header>
 
   <main>
-    <section id="intro" class="section">
-      <p class="muted">All content is hosted on YouTube and embedded here for fast loading. Submit your acknowledgment or quiz using the Microsoft Form below. If you experience loading issues on a restricted network, use the direct links under each video.</p>
-    </section>
-
-    <section id="videos" class="section">
+    <section id="videos">
       <h2>Training Videos</h2>
-      <div class="grid">
-        <!-- Video 1 -->
-        <article class="card">
-          <div class="frame">
-            <iframe 
-              src="https://www.youtube.com/embed/tBxK9-bfg6g" 
-              title="YouTube video 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
-          <div class="meta">
-            <a class="muted" href="https://youtu.be/tBxK9-bfg6g" target="_blank" rel="noopener">Open on YouTube</a>
-          </div>
-        </article>
-
-        <!-- Video 2 -->
-        <article class="card">
-          <div class="frame">
-            <iframe 
-              src="https://www.youtube.com/embed/1MF83ehBSkg" 
-              title="YouTube video 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
-          <div class="meta">
-            <a class="muted" href="https://youtu.be/1MF83ehBSkg" target="_blank" rel="noopener">Open on YouTube</a>
-          </div>
-        </article>
-
-        <!-- Video 3 -->
-        <article class="card">
-          <div class="frame">
-            <iframe 
-              src="https://www.youtube.com/embed/FzAmRySlKvs" 
-              title="YouTube video 3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
-          <div class="meta">
-            <a class="muted" href="https://youtu.be/FzAmRySlKvs" target="_blank" rel="noopener">Open on YouTube</a>
-          </div>
-        </article>
-
-        <!-- Video 4 -->
-        <article class="card">
-          <div class="frame">
-            <iframe 
-              src="https://www.youtube.com/embed/SeKp9UOZtBc" 
-              title="YouTube video 4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
-          <div class="meta">
-            <a class="muted" href="https://youtu.be/SeKp9UOZtBc" target="_blank" rel="noopener">Open on YouTube</a>
-          </div>
-        </article>
-
-        <!-- Video 5 -->
-        <article class="card">
-          <div class="frame">
-            <iframe 
-              src="https://www.youtube.com/embed/JFgu68Y9094" 
-              title="YouTube video 5" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
-          <div class="meta">
-            <a class="muted" href="https://youtu.be/JFgu68Y9094" target="_blank" rel="noopener">Open on YouTube</a>
-          </div>
-        </article>
-
-        <!-- Video 6 -->
-        <article class="card">
-          <div class="frame">
-            <iframe 
-              src="https://www.youtube.com/embed/INWVAx5z4zI" 
-              title="YouTube video 6" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
-          <div class="meta">
-            <a class="muted" href="https://youtu.be/INWVAx5z4zI" target="_blank" rel="noopener">Open on YouTube</a>
-          </div>
-        </article>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/tBxK9-bfg6g" allowfullscreen></iframe>
+      </div>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/1MF83ehBSkg" allowfullscreen></iframe>
+      </div>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/FzAmRySlKvs" allowfullscreen></iframe>
+      </div>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/SeKp9UOZtBc" allowfullscreen></iframe>
+      </div>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/JFgu68Y9094" allowfullscreen></iframe>
+      </div>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/INWVAx5z4zI" allowfullscreen></iframe>
       </div>
     </section>
 
-    <section id="powerpoints" class="section">
+    <section id="powerpoints">
       <h2>PowerPoints</h2>
-      <p class="muted">This section uses <strong>direct download links only</strong>. No Office Viewer embeds. Upload your files to <code>/assets/slides/</code> in your repo using the exact filenames below (or rename to match).</p>
-
-      <!-- Prefer clean, web‑safe filenames. If you keep originals, ensure the hrefs are URL‑encoded. -->
       <ul>
-        <li><a href="assets/slides/Sterile-Product-Preparation.pptx" target="_blank" rel="noopener">Sterile Product Preparation (.pptx)</a></li>
-        <li><a href="assets/slides/Nursing-Orientation-and-Training-10.5.23.pptx" target="_blank" rel="noopener">Nursing Orientation &amp; Training (10.5.23) (.pptx)</a></li>
-        <li><a href="assets/slides/IC-EH-Orientation-09-2023.pptx" target="_blank" rel="noopener">IC &amp; EH Orientation (09.2023) (.pptx)</a></li>
-        <li><a href="assets/slides/Antibiotic-Stewardship.pptx" target="_blank" rel="noopener">Antibiotic Stewardship (.pptx)</a></li>
-        <li><a href="assets/slides/2024-Annual-Competency-Slideshow-v2.pptx" target="_blank" rel="noopener">2024 Annual Competency Slideshow v2 (.pptx)</a></li>
+        <li><a href="assets/Sterile-Product-Preparation.pptx.pptx" target="_blank" rel="noopener">Sterile Product Preparation</a></li>
+        <li><a href="assets/Nursing-Orientation-and-Training-10.5.23.pptx.pptx" target="_blank" rel="noopener">Nursing Orientation &amp; Training (10.5.23)</a></li>
+        <li><a href="assets/IC-EH-Orientation-09-2023.pptx.ppt" target="_blank" rel="noopener">IC &amp; EH Orientation (09.2023)</a></li>
+        <li><a href="assets/Antibiotic-Stewardship.pptx.pptx" target="_blank" rel="noopener">Antibiotic Stewardship</a></li>
+        <li><a href="assets/2024-Annual-Competency-Slideshow-v2.pptx.pptx" target="_blank" rel="noopener">2024 Annual Competency Slideshow v2</a></li>
       </ul>
-
-      <details style="margin-top:10px">
-        <summary class="muted">If you must keep your original filenames</summary>
-        <div class="muted" style="padding-top:8px">
-          Replace each link above with the URL‑encoded path to your original file, for example:<br>
-          <code>assets/slides/Sterile%20Product%20Preparation.pptx</code><br>
-          <code>assets/slides/Nursing%20Orientation%20and%20Training%2010.5.23.pptx.pptx</code><br>
-          <code>assets/slides/IC%20EH%20orientation0_09.2023.ppt.ppt</code><br>
-          <code>assets/slides/Antibiotic%20Stewardship%2Cpptx.pptx</code><br>
-          <code>assets/slides/2024%20Annual%20Competency%20Slideshow%20v2.pptx.pptx</code>
-        </div>
-      </details>
-    </section>
-
-    <section id="form" class="section">
-      <h2>Microsoft Form — Acknowledgment / Quiz</h2>
-      <div class="form-wrap">
-        <iframe class="form-frame" src="https://forms.office.com/r/P2aYQTNSmT?origin=lprLink" title="Microsoft Form"></iframe>
-      </div>
-      <p class="muted" style="margin-top:10px;">Having trouble seeing the form? <a href="https://forms.office.com/r/P2aYQTNSmT?origin=lprLink" target="_blank" rel="noopener">Open it in a new tab</a>.</p>
-    </section> class="section">
-      <h2>Microsoft Form — Acknowledgment / Quiz</h2>
-      <div class="form-wrap">
-        <iframe class="form-frame" src="https://forms.office.com/r/P2aYQTNSmT?origin=lprLink" title="Microsoft Form"></iframe>
-      </div>
-      <p class="muted" style="margin-top:10px;">Having trouble seeing the form? <a href="https://forms.office.com/r/P2aYQTNSmT?origin=lprLink" target="_blank" rel="noopener">Open it in a new tab</a>.</p>
-    </section> class="section">
-      <h2>Microsoft Form — Acknowledgment / Quiz</h2>
-      <div class="form-wrap">
-        <!-- If your IT policy blocks embedding from forms.office.com, replace the src below with the official Microsoft Forms "Embed" code (it adds embed=true). -->
-        <iframe class="form-frame" src="https://forms.office.com/r/P2aYQTNSmT?origin=lprLink" title="Microsoft Form"></iframe>
-      </div>
-      <p class="muted" style="margin-top:10px;">Having trouble seeing the form? <a href="https://forms.office.com/r/P2aYQTNSmT?origin=lprLink" target="_blank" rel="noopener">Open it in a new tab</a>.</p>
     </section>
   </main>
 
   <footer>
-    <small>© <span id="year"></span> Omega Hospital — Training Portal</small>
+    <small>© <span id="year"></span> OMEGA HOSPITAL</small>
   </footer>
 
   <script>
